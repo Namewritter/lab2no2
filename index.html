@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <h1>แบบฟอร์มจองทัวร์</h1>
+        <fieldset>
+            <legend>
+                <p>ข้อมูลทั่วไป</p>
+            </legend>
+            <label>ชื่อ-สกุล: </label><br>
+            <input type="text" placeholder="กรอกชื่อ-สกุล" pattern="[A-Z]{2}" required/> *<br>
+            <label>Email: </label><br>
+            <input type="email" required/> *<br>
+            <label>โทรศัพท์: </label><br>
+            <input type="tel" value="+66" required/> *<br>
+            <label>ชื่อ-สกุล: </label><br>
+            <textarea name="" id="" cols="30" rows="" style="height: 50px " ></textarea><br>
+            <label>รหัสไปรษณย์: </label>
+            <input type="text" name="Pastage" id="" pattern="[0-9]{5}" style="width: 60px"><br>
+            <label>รูปผู้จอง: </label>
+            <input type="file" name="" id="">
+        </fieldset>
+        <fieldset>
+            <legend>
+                <p>ข้อมูลเข้าสู่ระบบ</p>
+            </legend>
+            <label>Username: </label>
+            <input type="text" name="" id="" pattern="[0-9a-zA-Z\_].{8,}"> <br>
+            <label><em>ประกอบด้วยตัวเลข ตัวอักษร หรือ _ ตั้งแต่ 8 ตัวขึ้นไป</em></label><br><br>
+            <label>Password: </label>
+            <input type="text" name="" id="" pattern="[0-9a-zA-Z\_].{8,}"> <br>
+            <label><em>ประกอบด้วยอักขระอะไรก็ได้ 8 ตัวขึ้นไป</em></label><br>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <p>ข้อมูลทัวร์ที่ต้องการ</p>
+            </legend>
+            <label>แพคเก็จทัวร์: </label>
+            <select name="country">
+                <option value="">--select--</option>
+                <option value="Thailand">ประเทศไทย</option>
+                <option value="England">ประเทศอังกฤษ</option>
+                <option value="Switzerland">ประเทศสวิซเซอร์แลนด์</option>
+            </select><br>
+            <label>วันที่เดินทาง: </label>
+            <input type="date" id="birthday" name="birthday" value="dd ------ yyyy"><br>
+            <label>จำนวนผู้เดินทาง: </label>
+            <input type="text" pattern="[1-10]"><br>
+            <label>เน้นการท่องเที่ยวแบบใด?</label><br>
+            <input type="checkbox" name="" id="">ช้อปปิ้ง <br>
+            <input type="checkbox" name="" id="">ธรรมชาติ <br>
+            <input type="checkbox" name="" id="">ทะเล <br>
+        </fieldset>
+        <p>ยอมรับเงื่อนไขและข้อตกลง
+            <input type="radio" name="yes" id="yes">I agree </input>
+            <input type="radio" name="no" id="no">I disagree </input>
+            &nbsp;<input type="submit" value="จอง">
+        </p>
+    </form>
+</body>
+</html>
